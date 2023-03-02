@@ -667,6 +667,30 @@ progress {
     max-width: 1320px;
   }
 }
+
+.ytp-chrome-top-buttons {
+    white-space: nowrap;
+    visibility: hidden;
+}
+.ytp-title-enable-channel-logo .ytp-title-channel {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    visibility: hidden;
+}
+.ytp-embed:not(.ad-showing) .ytp-title-text {
+    padding-top: 21px;
+    visibility: hidden;
+}
+.ytp-chrome-controls .ytp-button.ytp-youtube-button, .ytp-small-mode .ytp-chrome-controls .ytp-button.ytp-youtube-button, .ytp-embed .ytp-chrome-controls .ytp-button.ytp-youtube-button, .ytp-embed.ytp-small-mode .ytp-chrome-controls .ytp-button.ytp-youtube-button, .ytp-dni.ytp-embed .ytp-chrome-controls .ytp-button.ytp-youtube-button {
+    width: 0px;
+}
+
+
+
+
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
