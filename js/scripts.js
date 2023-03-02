@@ -44,13 +44,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-const video = document.querySelector('video');
-const playButton = document.querySelector('#play')
-
-playButton.addEventListener('click',() =>{
-    if(video.paused){
-        video.play();
-    }else{
-        video.pause();
-    }
+var videoPlayer = document.querySelector('iframe[src*="youtube.com"]');
+videoPlayer.addEventListener('contextmenu', function(event) {
+  event.preventDefault();
 });
